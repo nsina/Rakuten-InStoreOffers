@@ -1,0 +1,1 @@
+javascript:btns=[...document.querySelectorAll('.link-offer')].filter(b => b.textContent === 'Link Offer');c=()=>{ b = btns.pop(); if (!b) return console.log('Added your offers!'); b.click(); setTimeout(c, Math.random() * 1500 + 300) };c();
